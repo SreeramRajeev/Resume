@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(18, 17, 17);
+    margin:0px;
+    overflow: hidden;
+
+  }
+ .container{
+    color: white;
+ }
+  .left{
+    position: fixed;
+    float:left;
+    width:16%;
+    height:100%;
+    background-color: black;
+    margin:0px;
+    padding: 0;
+  }
+  .right{
+    float:right;
+    width:80%;
+  }
+  h1{
+    font-size: 70px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    margin-top: 40%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  li a:hover {
+    background-color: black;
+    color: aquamarine;
+  }
+  #ram {
+    background-size: contain;
+    width:50%;
+    margin-left:50px;
+  }
+  #transition-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  
+  #transition-overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .transition-link {
+    text-decoration: none;
+
+  }
+  .right h3 {
+    font-family: 'Brush Script MT', cursive;
+  }
+  @media (max-width: 950px ) and (min-width:430px){
+    #transition-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 9999;
+      pointer-events: none;
+    }
+    
+    #transition-overlay img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .left{
+      width:30%;
+    }
+    .right{
+      width: 60%;
+      margin-top: 60%;
+    }
+    #imc{
+      display:none;
+    }
+    img{
+      margin-top: 10%;
+    }
+    #link{
+      margin-top: 160% !important;
+    }
+    .hm{
+      display: none;
+    }
+  }
+  @media (max-width: 430px) {
+    #transition-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 9999;
+      pointer-events: none;
+    }
+    
+    #transition-overlay img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .right{
+      display: none;
+    }
+    .left {
+      width: 100%;
+      font-size: 6vh;
+    }
+    ul{
+      margin-top: 20%;
+    }
+    .det{
+      width:5% !important;
+      margin-top: 15%;
+    }
+    #ram {
+      width: 40%;
+      margin-left: 32%;
+    }
+    h3{
+      display: none;
+    }
+    h1{
+      font-size: 5vh;
+      margin-top: 250px !important;
+    }
+    #link{
+      margin-left: 10%;
+    }
+  }

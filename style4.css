@@ -1,0 +1,55 @@
+body {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background: url("https://i.gifer.com/origin/1d/1dc2e92177c43cac5bd2f59de5381a15.gif");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 50%;
+}
+
+.edu {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.top {
+    font-size: 25px;
+    margin-left: 6%;
+    margin-top: 1%;
+    gap: 10px;
+}
+
+h1 {
+    color: #00ffff;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li:before {
+    content: "➤ ";
+    color: #00ffff;
+    margin-right: 5px;
+}
+@media (max-width: 950px){
+    body {
+      background-image: none;
+    }
+    h1{
+      font-size: 6vh !important;
+    }
+    .top{
+        font-size: 2.4vh !important;
+    }
+  }
